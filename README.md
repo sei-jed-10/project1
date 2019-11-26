@@ -133,7 +133,7 @@ Your Connect 4 app must:
 ---
 
 ## Useful Resources
--** - **[Connect4](https://en.wikipedia.org/wiki/Connect_Four)**
+- **[Connect4](https://en.wikipedia.org/wiki/Connect_Four)**
 - **[MDN JavaScript Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript)** _(a great reference for all things Vanilla JavaScript)_
 - **[DevDocs](https://devdocs.io/)**
 - **[jQuery Docs](http://api.jquery.com)**
