@@ -92,9 +92,9 @@ Your Connect 4 app must:
 - Describe how some of your favorite functions work
 
 ## Necessary Deliverables
-* Projects are due Thursday, 7/4 at 8:30am!
+* Projects are due Thursday, 5/12/2019 at 8:30am!
 
-- A **working game, built by you**, hosted somewhere on the internet
+- A **working game, built by you**
 - A **link to your hosted working game** in the URL section of your Github repository
 - A **git repository hosted on Github**, with a link to your hosted game, and frequent commits dating back to the _very beginning of the project_
 - **A `README.md` file** with explanations of the technologies used, the approach taken, installation instructions, unsolved problems, any other useful information etc.
