@@ -50,6 +50,7 @@ By the time you submit this project, you will have covered new ground in, and re
 
 Your Connect 4 app must:
 - **Render a game board in the browser**
+- **The game board need to be Minimum 4 by 4**
 - **Switch turns** between Player1 and Player2(or whichever markers you select)
 - **Visually display which side won** if a player gets four in a row, or show a draw if neither player wins
 - **Include separate HTML / CSS / JavaScript files**
