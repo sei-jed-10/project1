@@ -1,12 +1,21 @@
 # ![GA Logo](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) 
 
-# Project #1: Connect 4
+# Project #1: Connect 4 
+
+#### Connect Four (also known as Captain's Mistress, Four Up, Plot Four, Find Four, Four in a Row, Four in a Line, Drop Four, and Gravitrips.
+- the objective of the game is to be the first to form a horizontal, vertical, or diagonal line of four of one's own discs. 
+
+
 # ![connect4 game](https://d1k5w7mbrh6vq5.cloudfront.net/images/cache/bc/32/a9/bc32a97d2f253e5ee2ca3cb7febe70b5.jpg)         ![connect4 game](https://imgs2.dab3games.com/connect-4-game.png) 
+
+
+
 
 ## Overview:
 
 Let's start out with something fun - **a game!**
 
+<p><a href="https://commons.wikimedia.org/wiki/File:Connect_Four.gif#/media/File:Connect_Four.gif"><img src="https://upload.wikimedia.org/wikipedia/commons/a/ad/Connect_Four.gif" alt="Connect Four.gif"></a><br>By <a href="//commons.wikimedia.org/wiki/User:Silver_Spoon" title="User:Silver Spoon">Silver Spoon</a> - <span class="int-own-work" lang="en">Own work</span>, <a href="https://creativecommons.org/licenses/by-sa/3.0" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=17635567">Link</a></p>
 
 **You will be working individually for this project**, but we are here to support you and you are here to support each other. Show us what you've got!
 
@@ -124,7 +133,7 @@ Your Connect 4 app must:
 ---
 
 ## Useful Resources
-
+-** - **[Connect4](https://en.wikipedia.org/wiki/Connect_Four)**
 - **[MDN JavaScript Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript)** _(a great reference for all things Vanilla JavaScript)_
 - **[DevDocs](https://devdocs.io/)**
 - **[jQuery Docs](http://api.jquery.com)**
