@@ -98,7 +98,7 @@ Your Connect 4 app must:
 - A **working game, built by you**
 - A **link to your hosted working game** in the URL section of your Github repository
 - A **git repository hosted on Github**, with a link to your hosted game, and frequent commits dating back to the _very beginning of the project_
-  ### How to deploy your website on github : 
+  ### How to deploy your website on github: [Click HERE](https://github.com/daghustani/github-website-deploy) 
   you have to make sure that you have an "index.html" file in your project folder. 
     1. Sign in to your github account.  
     2. Create a new public repository. 
