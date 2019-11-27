@@ -98,6 +98,16 @@ Your Connect 4 app must:
 - A **working game, built by you**
 - A **link to your hosted working game** in the URL section of your Github repository
 - A **git repository hosted on Github**, with a link to your hosted game, and frequent commits dating back to the _very beginning of the project_
+  ### How to deploy your website on github : 
+  you have to make sure that you have an "index.html" file in your project folder. 
+    1. Sign in to your github account.  
+    2. Create a new public repository. 
+    3. Name it as your project name (preferred). 
+    4. Push your code into github.( "git add ." will add all your files) 
+    5. In your project on github open settings then scroll down to GitHub Pages where by default source in "None"  
+    6. Change the source to be "master branch". 
+    7. Click the link and now you can see your website.
+
 - **A `README.md` file** with explanations of the technologies used, the approach taken, installation instructions, unsolved problems, any other useful information etc.
 - A **5 minute presentation** in which you answer the following questions:
   - What is the game about?
