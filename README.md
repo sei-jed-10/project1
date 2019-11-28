@@ -42,7 +42,7 @@ By the time you submit this project, you will have covered new ground in, and re
 - **Separate HTML, CSS, and JavaScript files** in your application
 - Build an application **to a specification that someone else gives you**
 - **Build a dynamic game that allows two players to compete** from the same computer
-- **Craft a `README.md` file that explains your app** to the world
+- **Create a `README.md` file that explains your app** to the world
 
 ---
 
