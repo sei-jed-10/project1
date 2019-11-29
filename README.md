@@ -97,7 +97,7 @@ Your Connect 4 app must:
 
 - A **working game, built by you**
 - A **link to your hosted working game** in the URL section of your Github repository
-- A **git repository hosted on Github**, with a link to your hosted game, and frequent commits dating back to the _very beginning of the project_ **(How to deploy your website on github: [Here](sei-jed-10/github-website-deploy) )** 
+- A **git repository hosted on Github**, with a link to your hosted game, and frequent commits dating back to the _very beginning of the project_ **(How to deploy your website on github: [Here](https://github.com/sei-jed-10/github-website-deploy) )** 
 
 - **A `README.md` file** with explanations of the technologies used, the approach taken, installation instructions, unsolved problems, any other useful information etc.**(readme example [Here](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2) )** 
 - A **5 minute presentation** in which you answer the following questions:
