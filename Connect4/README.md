@@ -1,24 +1,27 @@
 
-# About the game \
+<img src="Pic/ga.png" alt="GA">
+
+
+# About the game 
 For anyone who's a fan of strategy games, Connect Four is a definite classic. Playing against an opponent,
 you try to be the first to place four checkers in a row on the game board. While figuring out game winning strategy
 can sometimes be challenge, the game is simple enough for the entire family to play. If you're gearing up for your first game,
 you'll get the hang of it in no time, especially if you're familiar with Tic-Tac-Toe.
 
 
-# Four In A Line Rules \
+# Four In A Line Rules 
 Point the cursor over the column you wish to drop your piece in.
 Left click to drop your piece,When you can connect four pieces vertically, horizontally or diagonally you win.
 
 
-# Game features \
+# Game features 
 -alert("Welcome to Connect 4 game.. Let's see who wins") 
 >  when the game loads.. this alert will appear
 -the technic that i used to swich between players is so simple.. the turn will be 0 for player 1 then it's will be increment to turn 1 for player 2 then decrement again.
 - the game had a restart button that will refresh the page for a new game
 
 
-# List technologies used \
+# List technologies used 
 - HTML
 - CSS
 - JQuery
@@ -27,14 +30,14 @@ Left click to drop your piece,When you can connect four pieces vertically, horiz
 - GitHub
 
 
-# Future plan \
+# Future plan 
 - Artificial intelligence (Computer Plays against the player)
 - The player can choose the size of game table
 - the player can write hit name
 - the game can count the winner score
 
 
-# Development process and problem-solving strategy \
+# Development process and problem-solving strategy 
 - array 
 - function
 - jquary method
@@ -46,11 +49,11 @@ Left click to drop your piece,When you can connect four pieces vertically, horiz
 - dicrement  
 
 
-# wireframes \
+# wireframes 
 <img src="Pic/skra.jpg" alt="wireframes">
 
 
-# User Stories \
+# User Stories 
 - As a user, I should be able to start a new connect 4 game.
 - As a user, I should be able to click on a square to add marker first and then the other marker, and so on.
 - As a user, I should be shown a message after each turn for if I win, lose, tie or who's turn it is next.
@@ -58,6 +61,9 @@ Left click to drop your piece,When you can connect four pieces vertically, horiz
 - As a user, I should be shown a message when I win, lose or tie.
 - As a user, I should not be able to continue playing once I win, lose, or tie
 - As a user, I should be able to play the game again without refreshing the page (after finishing the game they can restart the game)
+
+
+# Pictures for the game
 
 <img src="Pic/Capture0.PNG" alt="Capture 1">
 <img src="Pic/Capture1.PNG" alt="Capture 2">
@@ -67,7 +73,8 @@ Left click to drop your piece,When you can connect four pieces vertically, horiz
 <img src="Pic/Capture5.PNG" alt="Capture 6">
 
 
-# Describe how you solved for the winner \
+# How i solved the winner 
+
 - I made an empty array for each column.
 - for each click the arrays will fills with the player variable .
 - for each round will check vertically, horizontally and diagonally.
@@ -75,7 +82,7 @@ Left click to drop your piece,When you can connect four pieces vertically, horiz
 
 
 
-# Describe how some of your favorite functions work \
+# How my favorite functions work 
 
 - $('#Restart').click(function() { 
         location.reload();
@@ -92,4 +99,14 @@ Left click to drop your piece,When you can connect four pieces vertically, horiz
         Check(IDcol,IDrow); 
     > call check function, give it coloumn and row id number, check if winner
        });
+        
+
+# This is the link of the game.. Have fun !
+> https://doaamt.github.io/Connect4/
+
+
+
+
+
+ By Doaa Turkistani 
 
