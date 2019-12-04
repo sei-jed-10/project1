@@ -1,0 +1,96 @@
+body{
+    margin:0;
+    background-color: #FFF2F2;
+    text-align: center;
+}
+nav{
+    display: flex;
+    background-color: #7D0101;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+nav h2 {
+    font-family: "RALEWAY", sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    letter-spacing: 1px;
+    color: #FFF2F2; 
+    display: inline-flex;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+.imm{
+    float: left;
+    margin-left: 10px;
+}
+.Cir{
+    height: 90px;
+    width: 90px;
+    background-color:#FFF2F2;
+    border-radius: 50%;
+    display: inline-block;
+}
+.col:hover{
+    background-color:#88C2D9;
+}
+#tab{
+    display: flex;
+    background-color: #160A6A;
+    justify-content: center;
+    width:400px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+#Restart{
+    font-family: "RALEWAY", sans-serif;
+    font-weight: 600;
+    text-align:center;
+    height: 70px;
+    width: 200px;
+    font-size: 20px;
+    color :#7D0101;
+    margin-top: 20px;
+}
+#About , #Rules {
+    font-family: "RALEWAY", sans-serif;
+    letter-spacing: 1px;
+    color:#7D0101;
+    margin-top: 200px;
+
+}
+p {
+    font-family: "RALEWAY", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: #000000;
+    }
+
+    main{
+    width: 850px;
+    margin: 35px auto;
+    margin-bottom: 100px; 
+}
+
+.red{
+    background-color: #A7031A;
+ }
+.yellow{
+    background-color: #FFF701;
+ }
+    
+footer {
+    background-color:  #7D0101;
+    }
+ 
+footer p {
+    font-family: "RALEWAY";
+    font-size: 15px;
+    color:#FFF2F2;
+    padding:10px;
+    margin-bottom: 0px ;
+}
