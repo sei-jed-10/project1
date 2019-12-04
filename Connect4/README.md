@@ -47,7 +47,7 @@ Left click to drop your piece,When you can connect four pieces vertically, horiz
 
 
 # wireframes \
-<img src="Pic/skra.JPG" alt="Capture 1">
+<img src="Pic/skra.jpg" alt="wireframes">
 
 
 # User Stories \
