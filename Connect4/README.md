@@ -45,9 +45,9 @@ Left click to drop your piece,When you can connect four pieces vertically, horiz
 - increment
 - dicrement  
 
+
 # wireframes \
-
-
+<img src="Pic/skra.JPG" alt="Capture 1">
 
 
 # User Stories \
@@ -65,7 +65,6 @@ Left click to drop your piece,When you can connect four pieces vertically, horiz
 <img src="Pic/Capture3.PNG" alt="Capture 4">
 <img src="Pic/Capture4.PNG" alt="Capture 5">
 <img src="Pic/Capture5.PNG" alt="Capture 6">
-
 
 
 # Describe how you solved for the winner \
