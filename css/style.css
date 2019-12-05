@@ -1,0 +1,52 @@
+.container {
+  display: flex;
+  justify-content: center;
+  /* justify-content: flex-end; */
+  /* flex-direction: column; */
+  /* text-align: center; */
+
+  /* align-self: center; */
+}
+
+.cell {
+  height: 30px;
+  width: 30px;
+  background-color: #555;
+  border-radius: 50%;
+  display: inline-block;
+  transition: 0.5s all;
+}
+
+.green {
+  background-color: green;
+}
+
+.red {
+  background-color: red;
+}
+
+table {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  border-block: inherit;
+  left: 32%;
+  margin-left: -32px;
+}
+
+table,
+th,
+td {
+  display: flex;
+
+  border: 20px solid black;
+}
+h2 {
+  display: inline-block;
+  margin: 10px;
+}
+
+.ok {
+  text-align: center;
+  font-size: large;
+}
