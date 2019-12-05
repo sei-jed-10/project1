@@ -7,17 +7,8 @@ var changePlayer = 0;
 $(document).ready(function () {
     // replay 
     
-    var table = document.querySelector("table")
+    // var table = document.querySelector("table")
 
-    // console.dir(parentElement.parentElement.rows[2].cells[1])
-
-  
-
-
-    // function replay()
-    // {
-    //     for(let x in )
-    // }
         
     
     $("[id*='cell-']").on('click', function (event) 
@@ -43,7 +34,6 @@ $(document).ready(function () {
 
                     for (i = this.parentElement.parentElement.rows.length -1; i >= 0; i--) {
                         var currentCell = this.parentElement.parentElement.rows[i].cells[x]
-                        
                         var check1 = currentCell.classList.contains('red');
                         var check2 = currentCell.classList.contains('green');
                         if(!(check1 || check2 ))
@@ -76,8 +66,9 @@ $(document).ready(function () {
 
                     for (i = this.parentElement.parentElement.rows.length -1; i >= 0; i--) {
                         var currentCell = this.parentElement.parentElement.rows[i].cells[x]
-                        var check = currentCell.classList.contains('red');
-                        if(!(check || currentCell.classList.contains('green')))
+                        var check1 = currentCell.classList.contains('red');
+                        var check2 =currentCell.classList.contains('green');
+                        if(!(check1 || check2 ))
                         {
                             played = true;
                             this.parentElement.parentElement.rows[i].cells[x].classList.add("green");
@@ -98,7 +89,7 @@ $(document).ready(function () {
               
             });
 
-// rest 
+// replay again the game
 var play = document.querySelector("#play"); 
 play.addEventListener("click", 
 function replay()
@@ -106,17 +97,32 @@ function replay()
 
     $("[id*='cell-']").removeClass('green')
     $("[id*='cell-']").removeClass('red')
-    console.log("what")
  
   }
+  
 
 
 ); 
 
-         
+var table = document.querySelector('table')
+var getIndex= []
+for(let row =0; row<=3; row++)
+{
+    
+    // var x = this.cellIndex
+
+    getIndex[row]= table.rows[row].cells[row]
+
+
+    
+
+}   
+
+console.dir(getIndex)
+});
 
                     
-        });
+        
 
         
         
@@ -134,18 +140,23 @@ function replay()
  
         function winFunction() {
             var counter = 0;
-            nextCell = currentCell +1; 
-            prev = currentCell -1; 
+            // nextCell = currentCell +1; 
+            // prev = currentCell -1; 
+
+            // var win1 = ['cal1','cal2', 'cal3', 'cal4' ]
 
             
             
             $("[id*='cell-']").each(function (index) {
-                if (currentCell.hasClass('green')) {
-                    counter++;
-                }
-                if (counter === 3) {
+                
+                if (getIndex.each.hasClass('green')) {
+                    // counter++;
+                // }
+                // if (counter === 3) {
                     var $winner = $("<h2/>").text("congratulations!");
                     $(".red").append($winner);
+
+                    console.log("yes")
                    
                 }
             });
