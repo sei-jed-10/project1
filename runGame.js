@@ -5,10 +5,36 @@ var changePlayer = 0;
 // 
 
 $(document).ready(function () {
+    // replay 
     
-        $("[id*='cell-']").on('click', function (event) 
+    var table = document.querySelector("table")
+
+    // console.dir(parentElement.parentElement.rows[2].cells[1])
+
+  
+
+
+    // function replay()
+    // {
+    //     for(let x in )
+    // }
+        
+    
+    $("[id*='cell-']").on('click', function (event) 
                     {
-                   
+            var acctive = document.querySelector("h1");
+ 
+            if(changePlayer == 0)
+    
+            {
+            acctive.innerText =   "Current: Red Player"
+                         
+            }
+            if(changePlayer == 1)
+            
+            {
+            acctive.innerText =   "Current: Green Player"               
+            }       
                 if (changePlayer ===0)
                 {
                     var x = this.cellIndex;                   
@@ -17,8 +43,10 @@ $(document).ready(function () {
 
                     for (i = this.parentElement.parentElement.rows.length -1; i >= 0; i--) {
                         var currentCell = this.parentElement.parentElement.rows[i].cells[x]
-                        var check = currentCell.classList.contains('red');
-                        if(!(check || currentCell.classList.contains('green')))
+                        
+                        var check1 = currentCell.classList.contains('red');
+                        var check2 = currentCell.classList.contains('green');
+                        if(!(check1 || check2 ))
                         {
                             this.parentElement.parentElement.rows[i].cells[x].classList.add("red");
                             played = true;
@@ -27,7 +55,7 @@ $(document).ready(function () {
                       }
                     
 
-                $(this).off("mouseleave"); 
+                // $(this).off("mouseleave"); 
                 //$(this).addClass('red');
             
                 
@@ -70,17 +98,49 @@ $(document).ready(function () {
               
             });
 
+// rest 
+var play = document.querySelector("#play"); 
+play.addEventListener("click", 
+function replay()
+  {
+
+    $("[id*='cell-']").removeClass('green')
+    $("[id*='cell-']").removeClass('red')
+    console.log("what")
+ 
+  }
+
+
+); 
 
          
 
                     
         });
+
+        
+        
+
+
+        // function callback() 
+        //     {
+        //         location.reload()
+        //         console.log("fun")
+
+        //     };
+
+          
         
  
         function winFunction() {
             var counter = 0;
+            nextCell = currentCell +1; 
+            prev = currentCell -1; 
+
+            
+            
             $("[id*='cell-']").each(function (index) {
-                if ($(this).hasClass('green')) {
+                if (currentCell.hasClass('green')) {
                     counter++;
                 }
                 if (counter === 3) {
@@ -91,19 +151,24 @@ $(document).ready(function () {
             });
         }
 
-//// create array for cell 
-        var cellIndexId=[];
-        for(let row=0; row<=15; row++)
-        {
-            cellIndexId[row] =["cell-"+[row]]
-            
-        }
-var home =[]
-for(let x=0; x<=cellIndexId.length; x++)
-{
-        home[x] =document.querySelector(`#` + cellIndexId[x])
+         
+ 
 
-}
+ 
+
+// //// create array for cell 
+//         var cellIndexId=[];
+//         for(let row=0; row<=15; row++)
+//         {
+//             cellIndexId[row] =["cell-"+[row]]
+            
+//         }
+// var home =[]
+// for(let x=0; x<=cellIndexId.length; x++)
+// {
+//         home[x] =document.querySelector(`#` + cellIndexId[x])
+
+// }
 
 //get the giagnol
 // let dg1= [13,10,7,4]
