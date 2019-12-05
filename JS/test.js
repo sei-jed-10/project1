@@ -1,3 +1,3 @@
 var test = document.querySelector('table')
 
-console.log(test)
+// console.log(test)
