@@ -13,21 +13,15 @@ $(document).ready(function () {
     
     $("[id*='cell-']").on('click', function (event) 
                     {
-            var acctive = document.querySelector("h1");
- 
-            if(changePlayer == 0)
-    
-            {
-            acctive.innerText =   "Current: Red Player"
-                         
-            }
-            if(changePlayer == 1)
-            
-            {
-            acctive.innerText =   "Current: Green Player"               
-            }       
+            var acctive = document.querySelector("h2");
+                 
                 if (changePlayer ===0)
                 {
+                    acctive.classList.remove("green")
+                    acctive.classList.add("red")
+                    acctive.innerText =   "Current: Red Player"
+                    
+                    
                     var x = this.cellIndex;                   
                     // var y= this.parentElement.rowIndex;
                     var played = false;
@@ -53,12 +47,18 @@ $(document).ready(function () {
                 if(played)
                 {
                 changePlayer ++;
+                
                 }
                 }
                     
                 
                 else if(changePlayer ===1)
-                { 
+                {
+                    acctive.classList.remove("red")
+                    acctive.classList.add("green")    
+                    acctive.innerText =   "Current: Green Player" 
+                              
+                 
                     var x = this.cellIndex;                   
                     var y= this.parentElement.rowIndex;
                     var played = false;
@@ -82,6 +82,7 @@ $(document).ready(function () {
                if(played)
                 {
                 changePlayer --;
+                
                 }
                 } 
             
