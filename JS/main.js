@@ -1,9 +1,11 @@
 
 var changePlayer = 0;
-var person1 = prompt("Red Player: Please enter your name? ")
-var person2 = prompt("Green Player: Please enter your name?")
+
 
 $(document).ready(function () {
+
+    var person1 = prompt("Red Player: Please enter your name? ")
+    var person2 = prompt("Green Player: Please enter your name?")
     var table = document.querySelector('table')
     var h6 = document.createElement('h6')
     h6.setAttribute("class", "bcs")
