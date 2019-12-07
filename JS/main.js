@@ -1,4 +1,7 @@
+
 var changePlayer = 0;
+var person1 = prompt("Red Player: Please enter your name? ")
+var person2 = prompt("Green Player: Please enter your name?")
 
 $(document).ready(function () {
     var table = document.querySelector('table')
@@ -24,12 +27,12 @@ $(document).ready(function () {
             if (cel1.classList.contains('red')
                 && cel2.classList.contains('red')
                 && cel3.classList.contains('red')
-                && cel4.classList.contains('red')) { return winFunction(" Winner Red User (Diagonal)") }
+                && cel4.classList.contains('red')) { return winFunction(`Winner ${person1} (Diagonal)`) }
 
             if (cel1.classList.contains('green')
                 && cel2.classList.contains('green')
                 && cel3.classList.contains('green')
-                && cel4.classList.contains('green')) { return winFunction(" Winner Green User (Diagonal)") }
+                && cel4.classList.contains('green')) { return winFunction(`Winner ${person2} (Diagonal)`) }
         }
 
         checkColor(getIndex[3], getIndex[2], getIndex[1], getIndex[0])
@@ -42,9 +45,19 @@ $(document).ready(function () {
         function winFunction(win) {
 
             this.win = win;
-            table.style.visibility = "hidden"
-            var $winner = $("<h6/>").text(`congratulations! ${win} `);
-            $(".bcs").append($winner);
+
+            if (this.win == "scores tied") {
+                table.style.visibility = "hidden"
+                var $winner = $("<h6/>").text(`Sorry ${win}, Play again! `);
+                $(".bcs").append($winner);
+                return;
+
+            }
+            else {
+                table.style.visibility = "hidden"
+                var $winner = $("<h6/>").text(`Congratulations! ${win} `);
+                $(".bcs").append($winner);
+            }
         }
 
 
@@ -91,7 +104,7 @@ $(document).ready(function () {
             cal[2][3].classList.contains('red') &&
             cal[3][3].classList.contains('red')) {
 
-            winFunction(" Winner is Red User (Vertical)")
+            winFunction(`Winner ${person1} (Vertical)`)
         }
 
 
@@ -119,8 +132,11 @@ $(document).ready(function () {
             cal[2][3].classList.contains('green') &&
             cal[3][3].classList.contains('green')) {
 
-            winFunction("Winner is Green User (Vertical)")
+            winFunction(`Winner ${person2} (Vertical)`)
         }
+
+
+
 
 
 
@@ -145,7 +161,7 @@ $(document).ready(function () {
             cal[3][2].classList.contains('red') &&
             cal[3][3].classList.contains('red')) {
             console.log("red H")
-            winFunction("Winner is red User (horizontal)")
+            winFunction(`Winner ${person1} (horizontal)`)
         }
 
 
@@ -170,11 +186,31 @@ $(document).ready(function () {
             cal[3][2].classList.contains('green') &&
             cal[3][3].classList.contains('green')) {
             console.log("green H")
-            winFunction("Winner is red User (horizontal) ")
+            winFunction(`Winner ${person2} (horizontal)`)
         }
 
+        // tie not the pest practice but does the job loool
+        if (
+            (cal[0][0].classList.contains('green') || cal[0][0].classList.contains('red')) &&
+            (cal[0][1].classList.contains('green') || cal[0][1].classList.contains('red')) &&
+            (cal[0][2].classList.contains('green') || cal[0][2].classList.contains('red')) &&
+            (cal[0][3].classList.contains('green') || cal[0][3].classList.contains('red')) &&
+            (cal[1][0].classList.contains('green') || cal[1][0].classList.contains('red')) &&
+            (cal[1][1].classList.contains('green') || cal[1][1].classList.contains('red')) &&
+            (cal[1][2].classList.contains('green') || cal[1][2].classList.contains('red')) &&
+            (cal[1][3].classList.contains('green') || cal[1][3].classList.contains('red')) &&
+            (cal[2][0].classList.contains('green') || cal[2][0].classList.contains('red')) &&
+            (cal[2][1].classList.contains('green') || cal[2][1].classList.contains('red')) &&
+            (cal[2][2].classList.contains('green') || cal[2][2].classList.contains('red')) &&
+            (cal[2][3].classList.contains('green') || cal[2][3].classList.contains('red')) &&
+            (cal[3][0].classList.contains('green') || cal[3][0].classList.contains('red')) &&
+            (cal[3][1].classList.contains('green') || cal[3][1].classList.contains('red')) &&
+            (cal[3][2].classList.contains('green') || cal[3][2].classList.contains('red')) &&
+            (cal[3][3].classList.contains('green') || cal[3][3].classList.contains('red'))
+        ) { winFunction("scores tied") }
 
     }
+    // end checking 
 
 
 
@@ -188,7 +224,7 @@ $(document).ready(function () {
         if (changePlayer === 0) {
             acctive.classList.remove("green")
             acctive.classList.add("red")
-            acctive.innerText = "Current: Red Player"
+            acctive.innerText = `Current: ${person1}`
 
 
             var x = this.cellIndex;
@@ -213,7 +249,7 @@ $(document).ready(function () {
         else if (changePlayer === 1) {
             acctive.classList.remove("red")
             acctive.classList.add("green")
-            acctive.innerText = "Current: Green Player"
+            acctive.innerText = `Current: ${person2}`
 
 
             var x = this.cellIndex;
@@ -237,8 +273,11 @@ $(document).ready(function () {
         }
 
 
+
+
         // call function to evaluate the color 
         checkVer()
+
     });
 
 
@@ -260,7 +299,7 @@ $(document).ready(function () {
 
             console.log(table)
         });
-
+    // if($("[id*='cell-']").classList.contains("red") )
 });
 
 
