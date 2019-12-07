@@ -5,38 +5,65 @@ var changePlayer = 0;
 // 
 
 $(document).ready(function () {
-    // replay 
-
-    // var table = document.querySelector("table")
-
     var table = document.querySelector('table')
-    // if (table.rows[0].cells[0].classList.contains('green')) { console.log("yes") }
+    var h6 = document.createElement('h6')
+    h6.setAttribute("class", "bcs")
+    document.body.appendChild(h6)
 
+    //------------------------check1 the virtical ----------------------------------------------------
+
+    function checkVer() {
+        var getIndex = []
+        for (let row = 0; row <= 3; row++) {
+            getIndex[row] = table.rows[row].cells[row]
+        }
+        //         console.log('oaky')
+
+
+        // { console.log("one right") }
+
+        function checkColor(cel1, cel2, cel3, cel4)
+        // cel2, cel3, cel4) 
+        {
+            if (cel1.classList.contains('red')
+                && cel2.classList.contains('red')
+                && cel3.classList.contains('red')
+                && cel4.classList.contains('red')) { return winFunction() }
+            // debugger;
+            // console.log(getIndex[])
+        }
+
+        checkColor(getIndex[3], getIndex[2], getIndex[1], getIndex[0])
+
+        //--------------------------------------------end check 
+        // function checkByrows() {
+
+        //     for
+        // }
+
+
+
+
+
+
+        // calling  winning function 
+        function winFunction() {
+            table.style.visibility = "hidden"
+            var $winner = $("<h6/>").text("congratulations! Green User");
+            $(".bcs").append($winner);
+        }
+
+
+
+    }
+
+
+
+    //----------------------------------------------------------------------------------------------------------
     let x = 0;
     var acctive = document.querySelector("h2");
 
     $("[id*='cell-']").on('click', function (event) {
-
-        // var rowsCol
-
-
-        // for (let row = 0; row < table.rows.length; row++) {
-        //     rowsCol[row] = []
-        //     for (let cal = 0; cal <= 3; cal++) {
-        //         rowsCol[row] = table.rows.cells[cal]
-        // if (table.rows[row].cells[x].classList.contains('green')) {
-        // winFunction()
-
-        // }
-        // }
-        // console.log(rowsCol)
-
-
-        // }
-
-        // if (x === 3) {
-        //     console.log("yes")
-        // }
 
 
         if (changePlayer === 0) {
@@ -58,25 +85,9 @@ $(document).ready(function () {
                     played = true;
                     break;
                 }
-                // check the row only 
-                // for (let row x=0; row<table.rows.length; row++ ) 
-                // {
-                //     for(let cell=0; cell<table.rows.cell.length;  )
-                //     if()
-
-
             }
 
-
-            // $(this).off("mouseleave"); 
-            //$(this).addClass('red');
-
-
-            // winFunction()
-            if (played) {
-                changePlayer++;
-
-            }
+            if (played) { changePlayer++; }
         }
 
 
@@ -93,6 +104,7 @@ $(document).ready(function () {
 
             for (i = this.parentElement.parentElement.rows.length - 1; i >= 0; i--) {
                 var currentCell = this.parentElement.parentElement.rows[i].cells[x]
+                // console.log(currentCell + (this.parentElement.parentElement.rows[i].cells[x] + 1))
                 var check1 = currentCell.classList.contains('red');
                 var check2 = currentCell.classList.contains('green');
                 if (!(check1 || check2)) {
@@ -101,134 +113,89 @@ $(document).ready(function () {
                     break;
                 }
             }
-            $(this).off("mouseleave");
 
-            // $(this).addClass('green');
+            if (played) { changePlayer--; }
 
-            if (played) {
-                changePlayer--;
 
-            }
         }
 
-
+        checkVer()
 
     });
+
+
+
+    //---------------------------------------------------end-----------------------------------------------
+
+
+
+
+
+
+    // click is over here 
+
 
     // replay again the game
     var play = document.querySelector("#play");
     play.addEventListener("click",
         function replay() {
 
+            // <!-- <h6 class="bcs"> </h6> -->
+
+
+
+
             $("[id*='cell-']").removeClass('green')
             $("[id*='cell-']").removeClass('red')
+            table.style.visibility = "visible";
             acctive.innerText = ""
+            h6.innerText = ""
+
+            console.log(table)
+        });
 
 
 
-        }
+    // console.dir(getIndex)
+
+    //------------- check winer
 
 
-
-    );
-
-    var table = document.querySelector('table')
-    var getIndex = []
-    for (let row = 0; row <= 3; row++) {
-
-        // var x = this.cellIndex
-
-        getIndex[row] = table.rows[row].cells[row]
+    // checkColor(1, 2, 3, 4)
+    //debugger;
 
 
 
 
-    }
 
-    console.dir(getIndex)
+
 });
 
 
+//--------------------
 
 
+// var rowsCol
 
 
+        // for (let row = 0; row < table.rows.length; row++) {
+        //     rowsCol[row] = []
+        //     for (let cal = 0; cal <= 3; cal++) {
+        //         rowsCol[row] = table.rows.cells[cal]
+        // if (table.rows[row].cells[x].classList.contains('green')) {
+        // winFunction()
+
+        // }
+        // }
+        // console.log(rowsCol)
 
 
-// function callback() 
-//     {
-//         location.reload()
-//         console.log("fun")
+        // }
 
-//     };
+        // if (x === 3) {
+        //     console.log("yes")
+        // }
 
-
-
-
-function winFunction() {
-    var counter = 0;
-    // nextCell = currentCell +1; 
-    // prev = currentCell -1; 
-
-    // var win1 = ['cal1','cal2', 'cal3', 'cal4' ]
-
-
-
-    // $("[id*='cell-']").each(function (index) {
-
-    //     if (getIndex.each.hasClass('green')) {
-    // counter++;
-    // }
-    // if (counter === 3) {
-    var $winner = $("<h2/>").text("congratulations!");
-    $(".red").append($winner);
-
-    // console.log("yes")
-
-    //     }
-    // });
-}
-
-
-
-
-
-
-// //// create array for cell 
-//         var cellIndexId=[];
-//         for(let row=0; row<=15; row++)
-//         {
-//             cellIndexId[row] =["cell-"+[row]]
-
-//         }
-// var home =[]
-// for(let x=0; x<=cellIndexId.length; x++)
-// {
-//         home[x] =document.querySelector(`#` + cellIndexId[x])
-
-// }
-
-//get the giagnol
-// let dg1= [13,10,7,4]
-// let dg2=[1,6,11,16]
-// $("[id*='cell-']").each(function (index){
-// if ($(home[dg1]).hasClass('green'))
-// {
-// console.log("whats is lobe")
-// }
-
-// });
-
-
-
-
-
-
-
-
-
-
-        // console.dir(ids)
 
 
 
