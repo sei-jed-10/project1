@@ -1,14 +1,9 @@
-/\* 
-Author: Abdullah Binmahfouz
-Data Analyst ----- Dec5/2019
 
+# Connect 4 game
 About this repo:
-It has a web page that carries a game called Connect 4 game.
-The game is quite simple and fun to play where two users can play the game. 
-The first user called: Red User , and the Second user called : Green User 
-Once the page is load user can start the game.
+#### Connect-Four is a tic-tac-toe-like two-player game in which players alternately place pieces on a vertical board 7 columns across and 6 rows high. Each player uses pieces of a particular color (commonly black and red, or sometimes yellow and red), and the object is to be the first to obtain four pieces in a horizontal, vertical, or diagonal line. Because the board is vertical, pieces inserted in a given column always drop to the lowest unoccupied row of that column. As soon as a column contains 6 pieces, it is full and no other piece can be placed in the column.
 
-If you would like to restart the game kindly press the button \*/
 
-website
+
+Game:
 https://abinm670.github.io/project1/
