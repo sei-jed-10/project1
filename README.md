@@ -6,4 +6,4 @@
 
 
 ### Link to the Game:
-https://abinm670.github.io/project1/
+https://abinm670.github.io/Connect_Four_game/
